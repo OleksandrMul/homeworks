@@ -12,6 +12,10 @@ p {
 	color: purple;
 }
 
+.title.peoples-title {
+	color: red;
+}
+
 #header-logo {
 	color: violet;
 }
@@ -32,6 +36,7 @@ h1 span {
 .cuisine-text > p {
 	color: orange;
 }
+
 
 .intro-text p {
 	color: darkolivegreen;
