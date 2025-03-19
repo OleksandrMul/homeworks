@@ -1,0 +1,141 @@
+@import url("reset.css");
+
+* {
+	color:cadetblue;
+}
+
+p {
+	color: blue;
+}
+
+.title {
+	color: purple;
+}
+
+#header-logo {
+	color: violet;
+}
+
+[class*="link"] {
+	color: pink;
+}
+
+div.peoples-text > p {
+	color: darkcyan;
+}
+
+h1 span {
+	color: orange;
+}
+
+.cuisine-title,
+.cuisine-text > p {
+	color: orange;
+}
+
+.intro-text p {
+	color: darkolivegreen;
+}
+
+.traditions-list a {
+	color: orange;
+}
+
+.traditions-list span {
+	color: greenyellow;
+}
+
+[class*="kupala"] {
+	color: red;
+}
+
+.traditions-info h3 {
+	color: aqua;
+}
+.music h2 {
+	color: darkgoldenrod;
+}
+
+.peoples-list .peoples-item {
+	color: blue;
+}
+
+.music-text * {
+	color: chartreuse;
+}
+
+.cuisine-list > li {
+	color: blueviolet;
+}
+
+.cuisine-item > ul > li {
+	color: black;
+}
+
+.cuisine-item ul > li > ul > li > a {
+	color: chartreuse;
+}
+
+.cuisine-item ul > li > ul > li {
+	color: blue;
+}
+
+.cuisine-item span {
+	color: hotpink;
+}
+
+.footer h2 {
+	color: #1D4ED8;
+}
+
+.footer h3 {
+	color: #FACC15;
+}
+
+.footer-title ~ p {
+	color: #1D4ED8;
+}
+
+.footer-title ~ p > span {
+	color: #FACC15;
+}
+
+.text + a {
+	color: #FACC15;
+}
+
+.traditions-item > ul > li + li {
+	color: #1D4ED8;
+}
+
+div > ul > li {
+	color: red;
+}
+
+div > ul > li ~ li {
+	color: green;
+}
+
+div > ul > li > ul > li {
+	color: blue;
+}
+
+div > ul > li > ul > li ~ li {
+	color: orange;
+}
+
+div > ul > li > ul > li ~ li > span {
+	color: #a0f0fc;
+}
+
+div > ul > li > ul > li > ol > li {
+	color: #4597f7;
+}
+
+div > ul > li > ul > li > ol > li ~ * {
+	color: #5d5d5d;
+}
+
+div > ul > li > ul > li > ol > li > span {
+	color: #5d5d5d;
+}
