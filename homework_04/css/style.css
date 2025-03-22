@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,600,700,italic,600italic&display=swap");
+@import url("fonts.css");
+
+@import url("reset.css");
+
+body {
+	font-family: "Roboto", sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.header-logo {
+	color: #0B4993;
+	font-family: "Inter", sans-serif;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 1.1;
+	text-transform: uppercase;
+}
+
+.menu-link,
+.footer-link {
+	color: #1A1A1A;
+	font-family: "Inter", sans-serif;
+	font-weight: 600;
+	line-height: 1.5;
+	letter-spacing: 2px;
+	text-decoration: underline;
+	text-transform: uppercase;
+	white-space: nowrap;
+}
+
+.main-title {
+	font-family: "Inter", sans-serif;
+	font-size: 70px;
+	font-weight: 700;
+	line-height: 1.07;
+	text-align: center;
+}
+
+.main-title span {
+	color: #0B4993;
+}
+
+.title {
+	font-family: "Inter", sans-serif;
+	font-size: 48px;
+	font-weight: 700;
+	line-height: 1.18;
+}
+
+.title span {
+	color: #0B4993;
+}
+
+.text p {
+	color: #4B5563;
+	line-height: 1.66;
+}
+
+.text p span {
+	color: #79325f;
+	font-weight: 600;
+}
+
+.eco-title, 
+.eco-text p {
+	font-family: "Poppins", sans-serif;
+	line-height: 1.5;
+}
+
+.eco-title {
+	color: #1A1A1A;
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.eco-text p {
+	color: #808080;
+	font-size: 18px;
+}
+
+.eco-link {
+	font-weight: 700;
+	color: #0B4993;
+	text-transform: lowercase;
+}
+
+.footer-label {
+	font-family: "Inter", sans-serif;
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 1.36;
+	letter-spacing: 1.32px;
+	text-transform: uppercase;
+}
+
+.footer-copy p {
+	font-size: 16px;
+	line-height: 1.31;
+	letter-spacing: 1px;
+}
+.footer-copy span {
+	color:#0B4993;
+	font-weight: 600;
+}
+
+.resources-link {
+	color: #1a2da9;
+	font-weight: 600;
+	line-height: 1.5;
+	text-decoration: underline;
+}
+
+.optimizing-title span {
+	text-decoration: overline;
+	text-decoration-color: #79325f;
+	text-decoration-style: wavy;
+}
+
+.resources-title span {
+	text-decoration: underline;
+	text-decoration-color: #79325f;
+	text-decoration-style: dotted;
+}
+
+.collaboration-title span {
+	text-decoration: underline;
+	text-decoration-color: #79325f;
+	text-decoration-style: dashed;
+}
+
+.performance-title span {
+	text-decoration: underline;
+	text-decoration-color: #79325f;
+	text-decoration-style: double;
+}
+
+.features-title {
+	text-align: center;
+	text-transform: capitalize;
+	text-decoration: underline;
+	text-decoration-color: #79325f;
+	text-decoration-style: solid;
+}
+
+.optimizing-item > ul > li > ul > li > ul > li {
+	font-style: italic;
+	color: #0B4993;
+}
+
+.optimizing-item > ul > li > ul > li + li {
+	font-style: oblique;
+	color: red;
+}
+
+.optimizing-item > ul > li > ul > li {
+	color: #79325f;
+	font-weight: 600;
+}
+.optimizing-item > ul > li {
+	color: #000000;
+	font-weight: 700;
+}
+
+.optimizing-list > .optimizing-item {
+	color: #0B4993;
+	font-weight: 700;
+}
+
+.article-optimizing {
+	text-align: center;
+}
+
+.article-performance {
+	text-align: right;
+}
+
+.features-text p {
+	text-align: justify;
+	word-spacing: 10px;
+}
+
+.text-line-through {
+	text-decoration: line-through;
+}
+
+.unlocking-text > p {
+	text-shadow: 1px 1px 0.5px #0B4993;
+}
+
+.prototyping-text p {
+	text-shadow: 
+		1px 1px 0.5px #0B4993,
+		0.5px 0.5px 0.1px #4B5563;
+}
