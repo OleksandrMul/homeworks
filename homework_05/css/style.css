@@ -1,0 +1,280 @@
+
+@import url("https://fonts.googleapis.com/css?family=Plus+Jakarta+Sans:regular,700,800&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
+
+@import url("fonts.css");
+
+@import url("reset.css");
+
+body {
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+[class*="-container"] {
+	max-width: 1230px;
+	margin: 0 auto;
+	padding: 0px 15px;
+}
+
+.header-logo {
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 1.1;
+	margin-bottom: 15px;
+}
+
+.menu-link {
+	color: #9A9EA6;
+	font-size: 18px;
+	line-height: 1.2;
+	text-transform: capitalize;
+	margin-bottom: 10px;
+}
+
+.main-title {
+	font-size: 76px;
+	font-weight: 800;
+	line-height: 1.17;
+	letter-spacing: -3.04px;
+	color: #181E4B;
+}
+
+.main-title span,
+.title span {
+	color: #4475F2;
+}
+
+.title {
+	font-size: 48px;
+	font-weight: 800;
+	line-height: 1.35;
+	letter-spacing: 0.48px;
+	margin-bottom: 20px;
+}
+
+.text {
+	color: #5E6282;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.87;
+}
+
+.text p {
+	margin-bottom: 15px;
+}
+
+.text a {
+	color: #7c0505;
+	font-weight: 700;
+	text-decoration: underline;
+}
+
+.footer-label {
+	font-size: 22px;
+	font-weight: 700;
+	line-height: 1.35;
+	margin-bottom: 15px;
+}
+
+.footer-container {
+	padding: 50px 0px;
+}
+
+.footer-top {
+	margin-bottom: 8px;
+}
+
+.footer-copy {
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 1.1;
+	display: none;
+}
+
+.header-container {
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+
+.page-container {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.overview-text {
+	padding-left: 35px;
+}
+
+.frontend-text {
+	padding: 20px 50px;
+}
+
+.backend-text {
+	padding: 20px 50px 30px;
+}
+
+.full-stack-text {
+	padding: 15px 45px 20px 50px;
+}
+
+.frontend-title span {
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.resources {
+	white-space: nowrap;
+	height: 200px;
+	overflow: scroll;
+}
+
+.resources-title {
+	margin: 1%;
+}
+
+.resources-text {
+	margin: 50px;
+}
+
+.backend {
+	margin-bottom: 50px;
+}
+
+.full-stack {
+	min-width: 400px;
+	margin-top: 30px;
+	white-space: nowrap;
+	height: 250px;
+	overflow: auto;
+}
+
+.article {
+	padding-bottom: 55px;
+}
+
+.article-title {
+	margin-bottom: 35px;
+	width: 75%;
+}
+
+.article-image {
+	display: block;
+	max-width: 550px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+
+.overview-title span {
+	display: block;
+}
+
+/* --------------------------------- Block from Business template ---------------------------------- */
+
+.advantages {
+	background-color: #231F8B;
+	color: #fff;
+	padding: 112px 0px;
+}
+
+.advantages-container {
+	max-width: 1080px;
+	margin: 0 auto;
+}
+
+.advantages-body {
+	margin-bottom: 70px;
+}
+
+.advantages-label,
+.item-advantage-text {
+	font-family: "Montserrat", sans-serif;
+}
+
+.advantages-label {
+	color: #5A54F2;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 1.71;
+	letter-spacing: 0.2px;
+	margin-bottom: 10px;
+}
+
+.advantages-title,
+.advantages-text,
+.item-advantage-title {
+	font-family: "Circular Std", sans-serif;
+}
+
+.advantages-title {
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 1.2;
+	margin-bottom: 10px;
+}
+
+.advantages-text {
+	font-size: 14px;
+	line-height: 1.42;
+	letter-spacing: 0.2px;
+	max-width: 765px;
+}
+
+.advantages-text p {
+	margin-bottom: 8px;
+}
+
+.advantages-item {
+	padding: 35px 40px;
+}
+
+.item-advantage {
+	background-color: #fff;
+	max-width: 230px;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 30px;
+}
+
+.item-advantage-image {
+	margin-bottom: 20px;
+}
+
+.item-advantage-title {
+	color: #252B42;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 1.5;
+	letter-spacing: 0.1px;
+	margin-bottom: 20px;
+}
+
+.item-advantage-decor {
+	margin-bottom: 20px;
+}
+
+.item-advantage-text {
+	color: #737373;
+}
+
+.item-advantage-text p {
+	font-size: 14px;
+	line-height: 1.42;
+	letter-spacing: 0.2px;
+	margin-bottom: 8px;
+}
+
+.item-advantage-dark {
+	background-color: #5A54F2;
+}
+
+.item-advantage-dark .item-advantage-title,
+.item-advantage-dark .item-advantage-text {
+	color: #fff;
+}
+
+.item-advantage-top-indent {
+	margin-top: 48px;
+}
+/* -------------------------------------------------------------------------------------------------- */
