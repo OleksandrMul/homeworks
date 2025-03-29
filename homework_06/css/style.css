@@ -72,16 +72,11 @@ body {
 .descriptions-body {
 	max-width: 648px;
 	margin: 0 auto;
-}
-
-.descriptions-text p,
-.descriptions-item {
 	color: #808080;
 	line-height: 1.5;
 }
 
 .descriptions-item {
-	line-height: 1.4;
 	padding-left: 28px;
 	background: url("../img/ecobazar/arrow_check.svg") 0 0 / 20px no-repeat;
 	min-height: 20px;
@@ -136,7 +131,8 @@ body {
 	vertical-align: middle;
 }
 
-.about-title {
+.about-title,
+.about-link {
 	font-weight: 700;
 }
 
@@ -145,29 +141,18 @@ body {
 	font-weight: 300;
 }
 
-.about-title,
-.about-label {
+.about-header {
+	line-height: 1.1;
 	font-size: 36px;
 }
 
-.about-title,
-.about-label,
+.about-header,
 .about-link {
 	text-transform: uppercase;
 }
 
-.about-title,
-.about-label,
-.about-text p,
-.about-link {
-	line-height: 1.1;
-}
-
 .about-text {
 	max-width: 630px;
-}
-
-.about-text p {
 	font-size: 16px;
 	line-height: 1.5;
 }
@@ -175,10 +160,9 @@ body {
 .about-link {
 	color: #343045;
 	font-size: 12px;
-	font-weight: 700;
 	border-radius: 40px;
 	padding: 17px 43px;
-	text-transform: uppercase;
+	line-height: 1;
 	background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
 }
 
@@ -221,6 +205,7 @@ body {
 	padding-top: 25px;
 	padding-bottom: 25px;
 	vertical-align: middle;
+	line-height: 1.1;
 }
 
 .info-item-location {
@@ -248,11 +233,6 @@ body {
 }
 
 .info-title,
-.info-link {
-	line-height: 1.1;
-}
-
-.info-title,
 .info-link:not(:last-child) {
 	margin-bottom: 10px;
 }
@@ -260,10 +240,6 @@ body {
 .info-title {
 	font-size: 24px;
 	font-weight: 700;
-}
-
-.info-link {
-	font-size: 14px;
 }
 /*======================================================================================================================================================== */
 
