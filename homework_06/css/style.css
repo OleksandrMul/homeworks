@@ -131,11 +131,6 @@ body {
 	vertical-align: middle;
 }
 
-.about-title,
-.about-link {
-	font-weight: 700;
-}
-
 .about-label {
 	color: rgba(255, 255, 255, 0.95);
 	font-weight: 300;
@@ -144,6 +139,7 @@ body {
 .about-header {
 	line-height: 1.1;
 	font-size: 36px;
+	font-weight: 700;
 }
 
 .about-header,
