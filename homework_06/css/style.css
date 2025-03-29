@@ -139,12 +139,12 @@ body {
 .about-header {
 	line-height: 1.1;
 	font-size: 36px;
-	font-weight: 700;
 }
 
 .about-header,
 .about-link {
 	text-transform: uppercase;
+	font-weight: 700;
 }
 
 .about-text {
