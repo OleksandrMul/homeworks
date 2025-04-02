@@ -123,10 +123,13 @@ body {
 	margin-bottom: 16px;
 }
 
+.item-meet-image-link {
+	height: 265px;
+}
+
 .item-meet-image-link img {
 	width: 100%;
 	height: 100%;
-	object-fit: cover;
 }
 
 .item-meet-body {
@@ -146,6 +149,7 @@ body {
 
 .item-meet-text {
 	color: #4F4F4F;
+	min-height: 79px;
 }
 
 .item-meet-text p:not(:last-child) {
