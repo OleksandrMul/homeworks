@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:regular,500,600&display=swap");
+
+@import url("reset.css");
+
+body {
+	font-family: "Poppins", sans-serif;
+	font-size: 14px;
+	color: #808080;
+}
+
+[class*="__container"] {
+	max-width: 1350px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.wrapper {
+	overflow: clip;
+	min-height: 100%;
+}
