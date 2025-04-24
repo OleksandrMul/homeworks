@@ -242,12 +242,16 @@ body {
 	stroke: #1A1A1A;
 }
 
-.item-product__link:hover,
+.item-product:hover .item-product__link,
 .actions-product__link:hover {
 	background-color: #00B207;
 }
 
-.item-product__link:hover svg,
+.item-product:hover .item-product__link:hover {
+	background-color: #2C742F;
+}
+
+.item-product:hover .item-product__link svg,
 .actions-product__link:hover svg {
 	stroke: #fff;
 }
