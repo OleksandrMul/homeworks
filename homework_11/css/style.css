@@ -374,7 +374,7 @@ body {
 	position: absolute;
 }
 
-.car__weels {
+.weels {
 	max-width: 680px;
 	position: relative;
 	height: 150px;
@@ -382,7 +382,7 @@ body {
 	z-index: 2;
 }
 
-.car__weel {
+.weel {
 	width: 150px;
 	height: 150px;
 	border-radius: 50%;
@@ -391,17 +391,17 @@ body {
 	position: absolute;
 }
 
-.car__weel:first-child {
+.weel:first-child {
 	left: 30px;
 	bottom: 30px;
 }
 
-.car__weel:last-child {
+.weel:last-child {
 	right: 25px;
 	bottom: 30px;
 }
 
-.car__weel::after {
+.weel::after {
 	content: "";
 	width: 50px;
 	height: 50px;
