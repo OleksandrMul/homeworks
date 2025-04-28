@@ -1,0 +1,414 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:regular&display=swap");
+
+@import url("reset.css");
+
+body {
+	font-family: "Poppins", sans-serif;
+}
+
+[class*="__container"] {
+	max-width: 1350px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.wrapper {
+	overflow: clip;
+	min-height: 100%;
+	position: relative;
+}
+
+.page__car {
+	position: relative;
+}
+
+.page__car::before {
+	position: absolute;
+	content: '';
+	transform: translate(0,25%);
+	width: 100%;
+	height: 350px;
+	background-color: #727272;
+}
+
+.page__car::after {
+	position: absolute;
+	content: '';
+	width: 100%;
+	border: 10px dashed #fff;
+	transform: translate(0, -100px);
+}
+
+.car {
+	padding-top: 180px;
+	padding-bottom: 180px;
+}
+
+.car__container {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.body-car {
+	font-size: 0;
+}
+
+.body-car__top {
+	position: relative;
+}
+
+.window-back {
+	position: absolute;
+	width: 120px;
+	height: 80px;
+	background-color: #333;
+	top: 10px;
+	left: 125px;
+}
+
+.window-back::before {
+	content: '';
+	position: absolute;
+	width: 120px;
+	height: 80px;
+	background-color: #333;
+	top: 0px;
+	left: -65px;
+	transform: skew(-45deg);
+}
+
+.window-front {
+	position: absolute;
+	width: 150px;
+	height: 80px;
+	background-color: #333;
+	top: 10px;
+	right: 363px;
+	z-index: 5;
+}
+
+.window-front::before {
+	content: '';
+	position: absolute;
+	width: 120px;
+	height: 80px;
+	background-color: #333;
+	top: 0px;
+	right: -82px;
+	transform: skew(45deg);
+}
+
+.top-back {
+	width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 150px solid rgb(134, 12, 12);;
+    border-bottom: 100px solid rgb(134, 12, 12);
+	display: inline-block;
+	position: relative;
+}
+
+.top-back::before {
+	content: '';
+	position: absolute;
+	width: 140px;
+	height: 1px;
+	background-color: #000;
+	z-index: 3;
+	bottom: -51px;
+	left: -120px;
+	transform: rotate(-45deg);
+}
+
+.top-front {
+	width: 0;
+    height: 0;
+    border-right: 100px solid transparent;
+    border-left: 200px solid rgb(134, 12, 12);;
+    border-bottom: 100px solid rgb(134, 12, 12);
+	display: inline-block;
+	position: relative;
+}
+
+.mirror {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	background-color: #000;
+	border-radius: 0% 100% 0% 100%/100% 100% 0% 0%;
+	z-index: 6;
+	top: 70px;
+	left: 470px;
+}
+
+.mirror::before {
+	content: '';
+	position: absolute;
+	width: 15px;
+	height: 8px;
+	background-color: #c24700;
+	border: 1px solid #000;
+	z-index: 3;
+	bottom: -53px;
+	left: 90px;
+}
+
+.mirror::after {
+	content: '';
+	position: absolute;
+	width: 380px;
+	height: 2px;
+	background-color: #000;
+	z-index: 3;
+	top: -70px;
+	left: -400px;
+}
+
+.door-handle {
+	position: absolute;
+	width: 30px;
+	height: 10px;
+	background-color: #000;
+	z-index: 3;
+	left: 270px;
+	top: 8px;
+}
+
+.door-handle::before {
+	content: '';
+	position: absolute;
+	width: 300px;
+	height: 8px;
+	background-color: #000;
+	z-index: 3;
+	bottom: -21px;
+	left: -19px;
+}
+
+.door-handle::after {
+	content: '';
+	position: absolute;
+	width: 45px;
+	height: 8px;
+	background-color: #000;
+	z-index: 3;
+	bottom: -21px;
+	left: 281px;
+}
+
+.top-front::after {
+	content: '';
+	position: absolute;
+	width: 1px;
+	height: 200px;
+	background-color: #000;
+	z-index: 3;
+	top: 0px;
+	left: -200px;
+}
+
+.body-car__bottom {
+	position: relative;
+}
+
+.light-back {
+	position: absolute;
+	width: 20px;
+	height: 30px;
+	background-color: #c24700;
+	border: 1px solid #000;
+	z-index: 3;
+	bottom: 51px;
+	left: 0px;
+}
+
+.light-front {
+	position: absolute;
+	width: 40px;
+	height: 20px;
+	border: 1px solid #000;
+	background-color: #eacc26;
+	z-index: 3;
+	bottom: 60px;
+	left: 632px;
+}
+
+.light-front::before {
+	content: '';
+	position: absolute;
+	width: 141px;
+	height: 1px;
+	background-color: #000;
+	z-index: 3;
+	bottom: 87px;
+	left: -203px;
+	transform: rotate(45deg);
+}
+
+.light-front::after {
+	content: '';
+	position: absolute;
+	width: 121px;
+	height: 1px;
+	background-color: #000;
+	z-index: 3;
+	bottom: 38px;
+	left: -84px;
+}
+
+.gas-cap {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	border: 1px solid #000;
+	background-color: #333;
+	z-index: 3;
+	top: 25px;
+	left: 50px;
+}
+
+.gas-cap::before {
+	content: '';
+	position: absolute;
+	width: 181px;
+	height: 8px;
+	background-color: #000;
+	z-index: 3;
+	bottom: 5px;
+	left: 18px;
+}
+
+.gas-cap::after {
+	content: '';
+	position: absolute;
+	width: 31px;
+	height: 8px;
+	background-color: #000;
+	z-index: 3;
+	bottom: 5px;
+	left: -31px;
+}
+
+.bottom-back {
+	width: 250px;
+	height: 100px;
+	background-color: rgb(134, 12, 12);
+	display: inline-block;
+	position: relative;
+	border: 1px solid #000;
+}
+
+.bottom-middle {
+	width: 300px;
+	height: 100px;
+	background-color: rgb(134, 12, 12);
+	display: inline-block;
+	position: relative;
+	border: 1px solid #000;
+}
+
+.bottom-middle::after {
+	content: '';
+	position: absolute;
+	width: 25px;
+	height: 10px;
+	border: 1px solid #000;
+	background-color: #c24700;
+	z-index: 3;
+	bottom: 45px;
+	left: 133%;
+}
+
+.bottom-front {
+	width: 100px;
+	height: 100px;
+	background-color: rgb(134, 12, 12);
+	display: inline-block;
+	position: relative;
+	border-left: 1px solid #000;
+	border-bottom: 1px solid #000;
+}
+
+.bottom-front::after {
+	content: '';
+	width: 0;
+    height: 0;
+    border-right: 20px solid transparent;
+    border-left: 20px solid rgb(134, 12, 12);
+    border-bottom: 100px solid rgb(134, 12, 12);
+	transform: translate(99px, 0);
+}
+
+.bumper-back {
+	bottom: 0;
+	left: -30px;
+	width: 55px;
+    height: 40px;
+	background-color: #000;
+	position: absolute;
+	z-index: 2;
+}
+
+.bumper-back::after {
+	content: '';
+	width: 0;
+    height: 0;
+	bottom: 0;
+	left: -25px;
+	position: absolute;
+	z-index: 2;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 40px solid #000;
+}
+
+.bumper-front {
+	bottom: 0;
+	left: 590px;
+	width: 60px;
+    height: 30px;
+	background-color: #000;
+	transform: translate(60px, 0);
+	position: absolute;
+}
+
+.car__weels {
+	max-width: 680px;
+	position: relative;
+	height: 150px;
+	position: relative;
+	z-index: 2;
+}
+
+.car__weel {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	background-color: #eee;
+	border: 10px dashed #000;
+	position: absolute;
+}
+
+.car__weel:first-child {
+	left: 30px;
+	bottom: 30px;
+}
+
+.car__weel:last-child {
+	right: 25px;
+	bottom: 30px;
+}
+
+.car__weel::after {
+	content: "";
+	width: 50px;
+	height: 50px;
+	background-color: #000;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
