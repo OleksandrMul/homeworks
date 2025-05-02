@@ -15,7 +15,7 @@ body {
 	overflow: clip;
 	min-height: 100%;
 	position: relative;
-	background: linear-gradient(0deg, rgba(253, 187, 45, 1) 0%, rgba(34, 193, 195, 1) 100%);
+	animation: color-change 8s linear forwards;
 }
 
 .page__car {
@@ -449,5 +449,14 @@ body {
 	}
 	100% {
 		left: -50%;
+	}
+}
+
+@keyframes color-change {
+	0% {
+		background: linear-gradient(0deg, rgb(57, 42, 11) 0%, rgb(15, 81, 82) 100%);
+	}
+	100% {
+		background: linear-gradient(0deg, rgba(253, 187, 45, 1) 0%, rgba(34, 193, 195, 1) 100%);
 	}
 }
