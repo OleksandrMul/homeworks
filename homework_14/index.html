@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Homework 14</title>
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+			</div>
+		</header>
+		<main class="page">
+			<div class="page__billing-shipping billing-shipping">
+				<div class="billing-shipping__container">
+					<form action="#" class="form">
+						<div class="form__wrapper">
+							<div class="form__billing">
+								<h2 class="form__title title">Billing Information</h2>
+								<div class="form__body">
+									<div class="form__line">
+										<div class="form__column">
+											<label class="form__label label" for="input-first-name">First name</label>
+											<input class="form__input input" id="input-first-name" required autocomplete="off" type="text" name="form[first-name]" placeholder="Your first name">
+										</div>
+										<div class="form__column">
+											<label class="form__label label" for="input-last-name">Last name</label>
+											<input class="form__input input" id="input-last-name" required autocomplete="off" type="text" name="form[last-name]" placeholder="Your last name">
+										</div>
+										<div class="form__column">
+											<label class="form__label label" for="input-company-name">Company Name <span>(optional)</span></label>
+											<input class="form__input input" id="input-company-name" autocomplete="off" type="text" name="form[company-name]" placeholder="Company name">
+										</div>
+									</div>
+									<div class="form__line">
+										<div class="form__column">
+											<label class="form__label label" for="input-street-address">Street Address</label>
+											<input class="form__input input" id="input-street-address" required autocomplete="off" type="text" name="form[street-address]" placeholder="Address">
+										</div>
+									</div>
+									<div class="form__line">
+										<div class="form__column">
+											<label class="form__label label" for="select-country">Country / Region</label>
+											<select class="form__select select" id="select-country" required name="form[country]">
+												<option value="" disabled selected>Select</option>
+												<option value="ca">Canada</option>
+												<option value="us">United States</option>
+												<option value="ua">Ukraine</option>
+											</select>
+										</div>
+										<div class="form__column">
+											<label class="form__label label" for="select-states">States</label>
+											<select class="form__select select" id="select-states" required name="form[states]">
+												<option value="" disabled selected>Select</option>
+												<option value="1">State 1</option>
+												<option value="2">State 2</option>
+												<option value="3">State 3</option>
+											</select>
+										</div>
+										<div class="form__column">
+											<label class="form__label label" for="input-zip-code">Zip Code</label>
+											<input class="form__input input" id="input-zip-code" required autocomplete="off" type="text" name="form[zip-code]" placeholder="Zip Code">
+										</div>
+									</div>
+									<div class="form__line">
+										<div class="form__column">
+											<label class="form__label label" for="input-email">Email</label>
+											<input class="form__input input" id="input-email" required autocomplete="off" type="email" name="form[email]" placeholder="Email Address">
+										</div>
+										<div class="form__column">
+											<label class="form__label label" for="input-phone">Phone</label>
+											<input class="form__input input" id="input-phone" required autocomplete="off" type="tel" name="form[phone]" placeholder="Phone number">
+										</div>
+									</div>
+									<div class="form__line">
+										<div class="form__column checkbox">
+											<div class="checkbox__item">
+												<input class="checkbox__input" id="input-checkbox-01" type="checkbox" name="form[ship-different-address]" value="1">
+												<label class="checkbox__label label label--gray" for="input-checkbox-01">Ship to a different address</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="form__additional">
+								<h2 class="form__title title">Additional Info</h2>
+								<div class="form__body">
+									<div class="form__line">
+										<div class="form__column">
+											<label class="form__label label" for="input-order-notes">Order Notes <span>(optional)</span></label>
+											<textarea class="form__input input input--text-area" id="input-order-notes" autocomplete="off" name="form[order-notes]" rows="3" placeholder="Notes about your order, e.g. special notes for delivery"></textarea>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form__info info-form">
+							<div class="info-form__order-summary order-summary">
+								<h2 class="order-summary__title title title--small">Order Summery</h2>
+								<div class="order-summary__items">
+									<div class="order-summary__item item-order">
+										<div class="item-order__wrapper">
+											<a href="#" class="item-order__image"><img src="img/billing-shipping/summary/green_capsicum.avif" alt="Two green peppers resting on a clean white background."></a>
+											<div class="item-order__body">
+												<div class="item-order__label info-label"><a href="#">Green Capsicum<span>x5</span></a></div>
+											</div>
+										</div>
+										<div class="item-order__price info-label info-label--price">$70.00</div>
+									</div>
+									<div class="order-summary__item item-order">
+										<div class="item-order__wrapper">
+											<a href="#" class="item-order__image"><img src="img/billing-shipping/summary/red_capsicum.avif" alt="Two red bell peppers resting on a clean white background."></a>
+											<div class="item-order__body">
+												<div class="item-order__label info-label"><a href="#">Red Capsicum<span>x1</span></a></div>
+											</div>
+										</div>
+										<div class="item-order__price info-label info-label--price">$14.00</div>
+									</div>
+								</div>
+								<div class="order-summary__info-blocks">
+									<div class="order-summary__info-block subtotal">
+										<div class="subtotal__label info-label info-label--gray">Subtotal:</div>
+										<div class="subtotal__price info-label info-label--price">$84.00</div>
+									</div>
+									<div class="order-summary__info-block shipping">
+										<div class="shipping__label info-label info-label--gray">Shipping:</div>
+										<div class="shipping__price info-label info-label--price">Free</div>
+									</div>
+									<div class="order-summary__info-block total">
+										<div class="total__label info-label info-label--bigger info-label--gray">Total:</div>
+										<div class="total__price info-label info-label--price-total">$84.00</div>
+									</div>
+								</div>
+							</div>
+							<div class="info-form__payment payment-info">
+								<h2 class="payment-info__title title title--small">Payment Method</h2>
+								<div class="payment-info__method-payment radio-btn">
+									<div class="radio-btn__item">
+										<input id="radio-btn-item-01" class="radio-btn__input" checked name="form[method-payment]" value="1" type="radio">
+										<label class="radio-btn__label info-label info-label--gray" for="radio-btn-item-01">Cash on Delivery</label>
+									</div>
+									<div class="radio-btn__item">
+										<input id="radio-btn-item-02" class="radio-btn__input" name="form[method-payment]" value="2" type="radio">
+										<label class="radio-btn__label info-label info-label--gray" for="radio-btn-item-02">Paypal</label>
+									</div>
+									<div class="radio-btn__item">
+										<input id="radio-btn-item-03" class="radio-btn__input" name="form[method-payment]" value="3" type="radio">
+										<label class="radio-btn__label info-label info-label--gray" for="radio-btn-item-03">Amazon Pay</label>
+									</div>
+								</div>
+							</div>
+							<button type="submit" class="info-form__button button">Place Order</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
