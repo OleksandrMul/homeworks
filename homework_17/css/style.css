@@ -1016,7 +1016,7 @@ body {
 	}
 
 	.sale-banner__button:active {
-		border: 2px solid #00B207;
+		border: 2px solid #06ac0c;
 	}
 
 	.actions-product__link:active svg ,
@@ -1026,7 +1026,7 @@ body {
 	}
 
 	.item-prime__card .actions-product__link--bag {
-		border-color: #00B207;
+		border-color: #00ab06;
 	}
 	.item-prime__card .actions-product__link--bag {
 		background-color: #00B207;
@@ -1070,7 +1070,7 @@ body {
 	}
 	
 	.actions-product__link:hover {
-		border: 1px solid #00B207;
+		border: 1px solid #03aa08;
 	}
 
 	.item-prime__card:hover .actions-product__link--bag:hover {
@@ -1082,18 +1082,18 @@ body {
 
 	.item-product__title a:hover,
 	.item-news__title a:hover {
-		color: #2c742f;
+		color: #37903a;
 	}
 
 	.item-product:hover .item-product__link,
 	.actions-product__link:hover,
 	.item-prime__card:hover .actions-product__link--bag {
-		background-color: #00B207;
+		background-color: #01ad06;
 	}
 
 	.item-product:hover .item-product__link:hover,
 	.item-prime__card:hover .actions-product__link--bag:hover {
-		background-color: #2C742F;
+		background-color: #328235;
 	}
 
 	.item-product:hover .item-product__link svg,
