@@ -1,0 +1,99 @@
+/* --------------------------------------------------- */
+.title {
+	font-size: clamp(2.625rem, 2.042rem + 2.91vw, 4.5rem); /* 72>42 1350>320 */
+	font-weight: 700;
+	line-height: 1.2;
+	text-align: center;
+	transition: color 0.3s;
+}
+.title--main {
+	color: var(--text-accent);
+}
+.title--medium {
+	font-size: clamp(2rem, 1.806rem + 0.97vw, 2.625rem); /* 42>32 1350>320 */
+}
+.title--small {
+	font-size: clamp(1.5rem, 1.422rem + 0.39vw, 1.75rem); /* 28>24 1350>320 */
+}
+/* Menu --------------------------------------------------- */
+.menu__list {
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: 1.875rem;
+	row-gap: 0.1875rem;
+	align-items: center;
+	justify-content: center;
+}
+
+.menu__link {
+	font-size: clamp(1rem, 0.961rem + 0.19vw, 1.125rem); /* 18>16 1350>320 */
+	text-transform: uppercase;
+    position: relative;
+	transition: color 0.3s;
+	padding-block: 0.25rem;
+}
+.menu__link::before {
+	content: "";
+    position: absolute;
+	inset-block-end: 0;
+	inset-inline-start: 0;
+    inline-size: 0;
+    block-size: 0.125rem;
+    transition: inline-size 0.3s;
+    border-radius: 0.0625rem;
+	background-color: var(--bg-secondary);
+}
+/* Theme --------------------------------------------------- */
+.theme {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0.25rem;
+	border-radius: 50%;
+	transition: background-color 0.3s;
+}
+.theme__change {
+	inline-size: 1.875rem;
+	block-size: 1.875rem;
+	flex: 0 0 1.875rem;
+	cursor: pointer;
+	transition: background 0.3s;
+	border-radius: 50%;
+}
+.theme__reset {
+	opacity: 0;
+	visibility: hidden;
+}
+
+.theme__reset.active{
+	opacity: 1;
+	visibility: visible;
+}
+.theme__reset::before{
+	content:"X";
+	position: absolute;
+	inset-block-start: -0.375rem;
+	inset-inline-end: -0.375rem;
+	cursor: pointer;
+	inline-size: 0.9375rem;
+	block-size: 0.9375rem;
+	font-size: 0.75rem;
+	border-radius: 50%;
+	color: var(--bg-inverse);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	background-color: var(--text-accent);
+	transition: color 0.3s, opacity 0.3s, background 0.3s;
+}
+
+html.dark .theme__change {
+	background: url('../img/icons/sun.svg') 0 0 / 100% no-repeat;
+}
+html.light .theme__change {
+	background: url('../img/icons/moon.svg') 0 0 / 100% no-repeat;
+}
+/* --------------------------------------------------- */

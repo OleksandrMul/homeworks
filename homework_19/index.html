@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Homework 19</title>
+</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="header__container">
+					<a href="#" data-goto=".hero" class="header__logo">Logo</a>
+					<div class="header__menu menu">
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item"><a data-goto=".examples" href="#" class="menu__link">Examples</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="header__actions">
+						<div class="theme">
+							<button type="button" class="theme__change"></button>
+							<button type="button" class="theme__reset"></button>
+						</div>
+					</div>
+				</div>
+			</header>
+			<main class="page">
+				<section class="page__hero hero">
+					<div class="hero__container">
+						<h1 class="hero__title title title--main">Full screen block</h1>
+					</div>
+					<img class="hero__background" src="img/hero/hero_bg.avif" alt="A group of oranges, some whole and some sliced, with green leaves on a white background.">
+				</section>
+				<article class="page__examples examples">
+					<div class="examples__container">
+						<h2 class="examples__title title title--medium">Examples</h2>
+						<div class="examples__body">
+							<section class="example">
+								<h3 class="example__title title title--small">Pixels</h3>
+								<div class="example__body">
+									<div class="example-card">
+										<div>inline-size: 200px</div>
+										<div>block-size: 200px</div>
+										<div>padding: 15px</div>
+									</div>
+								</div>
+							</section>
+							<section class="example">
+								<h3 class="example__title title title--small">EM</h3>
+								<div class="example__body">
+									<div class="example-card example-card--em">
+										<div>inline-size: 12.5em</div>
+										<div>block-size: 12.5em</div>
+										<div>padding: 0.9375em</div>
+									</div>
+									<div class="example-card example-card--em example-card--fs">
+										<div>inline-size: 12.5em</div>
+										<div>block-size: 12.5em</div>
+										<div>padding: 0.9375em</div>
+										<div>font-size: 20px</div>
+									</div>
+								</div>
+							</section>
+							<section class="example">
+								<h3 class="example__title title title--small">REM</h3>
+								<div class="example__body">
+									<div class="example-card example-card--rem">
+										<div>inline-size: 12.5rem</div>
+										<div>block-size: 12.5rem</div>
+										<div>padding: 0.9375rem</div>
+									</div>
+									<div class="example-card example-card--rem example-card--fs">
+										<div>inline-size: 12.5rem</div>
+										<div>block-size: 12.5rem</div>
+										<div>padding: 0.9375rem</div>
+										<div>font-size: 20px</div>
+									</div>
+								</div>
+							</section>
+							<section class="example">
+								<h3 class="example__title title title--small">Percentages %</h3>
+								<div class="example__body">
+									<div class="example-card example-card--inline">
+										<div>Just text that follows a font size of 16 pixels.</div>
+										<div class="fs-100">Text with font size 100% (16/100*100=16px)</div>
+										<div class="example-card__inner fs-150">Text with font size 150% (16/100*150=24px)
+											<div>That text follows a font size of 150% (16/100*150=24px)</div>
+											<div class="fs-110">Text with font size 110% (24/100*110=26px)</div>
+										</div>
+									</div>
+								</div>
+							</section>
+							<section class="example">
+								<h3 class="example__title title title--small">VW, VH, VMIN, VMAX</h3>
+								<div class="example__body">
+									<div class="example-card example-card--inline">
+										<div>Just text that follows a font size of 16 pixels.</div>
+										<div class="fs-vw">Text with font size 1.5vw</div>
+										<div class="example-card__inner fs-vmax">Text with font size 1.5vmax
+											<div class="fs-vmin">Text with font size 2.5vmin</div>
+											<div class="fs-vh">Text with font size 1.8vh</div>
+										</div>
+									</div>
+									<div class="example-card example-card--viewport">
+										<div>inline-size: 50vw</div>
+										<div>block-size: 15vh</div>
+										<div>padding: 1vmax</div>
+									</div>
+								</div>
+							</section>
+							<section class="example">
+								<h3 class="example__title title title--small">Calc()</h3>
+								<div class="example__body">
+									<div class="example-card example-card--inline example-card--calc">
+										<div>inline-size: calc(100% - 5rem);</div>
+									</div>
+								</div>
+							</section>
+							<section class="example">
+								<h3 class="example__title title title--small">Clamp()</h3>
+								<div class="example__body">
+									<div class="example-card example-card--inline example-card--clamp">
+										<div>font-size: clamp(20px, 5vw, 48px)</div>
+									</div>
+								</div>
+							</section>
+							<section class="example">
+								<h3 class="example__title title title--small">Clip-path</h3>
+								<div class="example__body">
+									<div class="example-card example-card--clip-path">
+									</div>
+								</div>
+							</section>
+							<section class="example">
+								<h3 class="example__title title title--small">Pointer-events</h3>
+								<div class="example__body">
+									<div class="example-card example-card--inline">
+										<a href="#" class="example-link">Pointer-events: auto</a>
+										<a href="#" class="example-link example-link--pe-none">Pointer-events: none</a>
+									</div>
+								</div>
+							</section>
+							<section class="example">
+								<h3 class="example__title title title--small">Cursor</h3>
+								<div class="example__body">
+									<div class="example-card example-card--cursor example-card--cursor-help">
+										<div>cursor: help</div>
+									</div>
+									<div class="example-card example-card--cursor example-card--cursor-wait">
+										<div>cursor: wait</div>
+									</div>
+									<div class="example-card example-card--cursor example-card--cursor-crosshair">
+										<div>cursor: crosshair</div>
+									</div>
+									<div class="example-card example-card--cursor example-card--cursor-not-allowed">
+										<div>cursor: not-allowed</div>
+									</div>
+									<div class="example-card example-card--cursor example-card--cursor-zoom-in">
+										<div>cursor: zoom-in</div>
+									</div>
+									<div class="example-card example-card--cursor example-card--cursor-zoom-out">
+										<div>cursor: zoom-out</div>
+									</div>
+									<div class="example-card example-card--cursor example-card--cursor-grab">
+										<div>cursor: grab</div>
+									</div>
+									<div class="example-card example-card--cursor example-card--cursor-pointer">
+										<div>cursor: pointer</div>
+									</div>
+								</div>
+							</section>
+							<section class="example">
+								<h3 class="example__title title title--small">min() And max()</h3>
+								<div class="example__body">
+									<div class="example-card example-card--min">
+										<div>inline-size: min(400px, 100%)</div>
+									</div>
+									<div class="example-card example-card--max">
+										<div>inline-size: max(400px, 100%)</div>
+									</div>
+								</div>
+							</section>
+							<section class="example">
+								<h3 class="example__title title title--small">Vertical-text</h3>
+								<div class="example__body">
+									<div class="example-card example-card--inline">
+										<p>Hello World!</p>
+									</div>
+								</div>
+							</section>
+							<section class="example">
+								<h3 class="example__title title title--small">Subgrid</h3>
+								<div class="example__body example__body--grid">
+									<div class="example-card example-card--item example-card--inline">
+										<div class="example-card example-card--inline">sub-1</div>
+										<div class="example-card example-card--inline">sub-2</div>
+										<div class="example-card example-card--inline">sub-3</div>
+										<div class="example-card example-card--inline">sub-4</div>
+										<div class="example-card example-card--inline">sub-5</div>
+										<div class="example-card example-card--inline">sub-6</div>
+									</div>
+									<div class="example-card example-card--inline">2</div>
+									<div class="example-card example-card--inline">3</div>
+									<div class="example-card example-card--inline">4</div>
+									<div class="example-card example-card--inline">5</div>
+									<div class="example-card example-card--inline">6</div>
+								</div>
+							</section>
+							<section class="example">
+								<h3 class="example__title title title--small">Background-attachment</h3>
+								<div class="example__items">
+									<div class="example-item"></div>
+									<div class="example-item"></div>
+									<div class="example-item"></div>
+									<div class="example-item"></div>
+									<div class="example-item"></div>
+									<div class="example-item"></div>
+									<div class="example-item"></div>
+									<div class="example-item"></div>
+									<div class="example-item"></div>
+									<div class="example-item"></div>
+									<div class="example-item"></div>
+									<div class="example-item"></div>
+									<div class="example-item"></div>
+									<div class="example-item"></div>
+									<div class="example-item"></div>
+								</div>
+							</section>
+						</div>
+					</div>
+				</article>
+			</main>
+			<footer class="footer">
+				<div class="footer__container">
+				</div>
+			</footer>
+		</div>
+		<script src="js/script.js"></script>
+	</body>
+</html>
+
