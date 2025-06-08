@@ -200,8 +200,14 @@ body {
 .example-card--item {
 	display: grid;
 	grid-column: 1 / -1;
-	grid-template-columns: subgrid;
+	grid-template-columns: repeat(3, 1fr);
 	gap: 0.625rem;
+}
+
+@supports (grid-template-columns: subgrid) {
+	.example-card--item {
+		grid-template-columns: subgrid;
+	}
 }
 
 .example__body--grid .example-card {
