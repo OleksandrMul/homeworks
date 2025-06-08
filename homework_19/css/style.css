@@ -181,7 +181,7 @@ body {
 	gap: clamp(0.938rem, 0.646rem + 1.46vw, 1.875rem) /* 30>15 1350>320 */
 }
 
-/* Example block ----------------------------------- */
+/* Example ----------------------------------- */
 .example__title:not(:last-child) {
 	margin-block-end: 0.53em;
 }
@@ -197,7 +197,7 @@ body {
 	grid-template-columns: repeat(3, 1fr);
 }
 
-.example-card--item {
+.example__card--item {
 	display: grid;
 	grid-column: 1 / -1;
 	grid-template-columns: repeat(3, 1fr);
@@ -205,38 +205,46 @@ body {
 }
 
 @supports (grid-template-columns: subgrid) {
-	.example-card--item {
+	.example__card--item {
 		grid-template-columns: subgrid;
 	}
 }
 
-.example__body--grid .example-card {
+.example__body--grid .example__card {
 	font-size: 1.25rem;
 	text-align: center;
 }
 
-.example__body--grid .example-card.example-card--item {
+.example__body--grid .example__card.example__card--item {
 	background-color: transparent;
 	padding: 0;
 }
 
-.example-card {
+.example__card {
 	display: flex;
 	flex-direction: column;
 	row-gap: 0.625rem;
-	background-color: var(--primary);
 	inline-size: 200px;
 	block-size: 200px;
-	padding: 15px;
 	color: var(--text-secondary);
 }
 
-.example-card--inline {
-	inline-size: 100%;
-	block-size: 100%;
+.example__card--inline {
 	display: grid;
 	gap: 0.625rem;
 }
+
+.example__card--inline,
+.item {
+	inline-size: 100%;
+	block-size: 100%;
+}
+.example__card,
+.item {
+	padding: 15px;
+	background-color: var(--primary);
+}
+
 
 .fs-100 {
 	font-size: 100%;
@@ -264,47 +272,47 @@ body {
 	font-size: 1.5vh;
 }
 
-.example-card__inner {
+.example__card__inner {
 	display: grid;
 	gap: 0.9375rem;
 }
 
-.example-card--em {
+.example__card--em {
 	inline-size: 12.5em; 
 	block-size: 12.5em;
 	padding: 0.9375em;
 }
 
-.example-card--rem {
+.example__card--rem {
 	inline-size: 12.5rem; 
 	block-size: 12.5rem;
 	padding: 0.9375rem;
 }
 
-.example-card--viewport {
+.example__card--viewport {
 	inline-size: 50vw;
 	block-size: 15vh;
 	padding: 1vmax;
 }
 
-.example-card--fs {
+.example__card--fs {
 	font-size: 20px;
 }
 
-.example-card--calc {
+.example__card--calc {
 	inline-size: calc(100% - 5rem);
 	background-color: var(--primary);
 }
 
-.example-card--clamp {
+.example__card--clamp {
 	font-size: clamp(20px, 5vw, 48px);
 }
 
-.example-card--clip-path {
+.example__card--clip-path {
 	clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);
 }
 
-.example-link {
+.example__link {
 	justify-self: start;
 	padding: 0.5rem;
 	font-size: 1.25rem;
@@ -312,11 +320,11 @@ body {
 	transition: background-color 0.3s;
 }
 
-.example-link--pe-none {
+.example__link--pe-none {
 	pointer-events: none;
 }
 
-.example-card--cursor {
+.example__card--cursor {
 	font-size: 1.125rem;
 	display: grid;
 	align-items: center;
@@ -324,39 +332,39 @@ body {
 	block-size: 7.5rem;
 }
 
-.example-card--cursor-help {
+.example__card--cursor-help {
 	cursor: help;
 }
-.example-card--cursor-wait {
+.example__card--cursor-wait {
 	cursor: wait;
 }
-.example-card--cursor-crosshair {
+.example__card--cursor-crosshair {
 	cursor: crosshair;
 }
-.example-card--cursor-not-allowed {
+.example__card--cursor-not-allowed {
 	cursor: not-allowed;
 }
-.example-card--cursor-zoom-in {
+.example__card--cursor-zoom-in {
 	cursor: zoom-in;
 }
-.example-card--cursor-zoom-out {
+.example__card--cursor-zoom-out {
 	cursor: zoom-out;
 }
-.example-card--cursor-grab {
+.example__card--cursor-grab {
 	cursor: grab;
 }
-.example-card--cursor-pointer {
+.example__card--cursor-pointer {
 	cursor: pointer;
 }
 
-.example-card--min {
+.example__card--min {
 	inline-size: min(400px, 100%);
 }
-.example-card--max {
+.example__card--max {
 	inline-size: max(400px, 100%);
 }
 
-.example-card--inline p {
+.example__card--inline p {
 	writing-mode: vertical-lr;
 	padding-inline-start: 0.9375rem;
 	padding-block-start: 3.125rem;
@@ -364,7 +372,7 @@ body {
 	text-orientation: upright;
 	position: relative;
 }
-.example-card--inline p::before {
+.example__card--inline p::before {
 	content: "";
 	position: absolute;
 	inline-size: 0.125rem;
@@ -380,7 +388,7 @@ body {
 	grid-template-columns: repeat(auto-fit, minmax(min(15.625rem,100%), 1fr));
 	grid-auto-rows: 9.375rem;
 	}
-.example-item {
+.example__item {
 	background: url('../img/hero/hero_bg.avif') 0 0 / 100% no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
@@ -404,7 +412,7 @@ body {
 		color: var(--bg-secondary);
 	}
 
-	.example-link:hover,
+	.example__link:hover,
 	.theme__reset:hover::before,
 	.theme:hover {
 		background-color: var(--bg-secondary);
