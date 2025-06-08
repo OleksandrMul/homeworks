@@ -7,7 +7,7 @@
 	transition: color 0.3s;
 }
 .title--main {
-	color: var(--text-accent);
+	color: var(--text-accent, #ededed);
 }
 .title--medium {
 	font-size: clamp(2rem, 1.806rem + 0.97vw, 2.625rem); /* 42>32 1350>320 */
@@ -41,7 +41,7 @@
     block-size: 0.125rem;
     transition: inline-size 0.3s;
     border-radius: 0.0625rem;
-	background-color: var(--bg-secondary);
+	background-color: var(--bg-secondary, #7678ed);
 }
 /* Theme --------------------------------------------------- */
 .theme {
@@ -80,13 +80,13 @@
 	block-size: 0.9375rem;
 	font-size: 0.75rem;
 	border-radius: 50%;
-	color: var(--bg-inverse);
+	color: var(--bg-inverse, #000);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	text-align: center;
-	background-color: var(--text-accent);
+	background-color: var(--text-accent, #ededed);
 	transition: color 0.3s, opacity 0.3s, background 0.3s;
 }
 
