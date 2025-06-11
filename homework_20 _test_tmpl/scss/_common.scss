@@ -1,9 +1,0 @@
-.title {
-    color: #000;
-    font-size: 60px;
-    @include adaptiveValue("font-size", 60, 22);
-    font-weight: 300;
-    line-height: 1.2;
-    max-width: toRem(767);
-    font-family: "KoPub Batang", serif;
-}
