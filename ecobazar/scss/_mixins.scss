@@ -1,0 +1,179 @@
+@use "sass:math";
+
+// Мінімальна ширина сторінки
+$minWidth: 320;
+// Ширина полотна (макету)
+$maxWidth: 1920;
+// Ширина обмежуючого контейнера (0 = немає обмеження)
+$maxWidthContainer: 1320;
+// Загальний відступ у контейнера
+// (30 = по 15px ліворуч і праворуч, 0 = немає відступу)
+$containerPadding: 30;
+
+// Ширина спрацьовування першого брейкпоінту
+$containerWidth: $maxWidthContainer + $containerPadding;
+
+// Брейк-поїнти
+$pc: $containerWidth; // ПК, ноутбуки, деякі планшети у горизонтальному положенні
+$tablet: 991.98; // Планшети, деякі телефони в горизонтальному положенні
+$mobile: 767.98; // Телефони L
+$mobileSmall: 479.98; // Телефони S
+
+// Тип адаптива:
+// 1 = чуйність (у контейнера немає брейкпоінтів),
+// 2 = по брейк-поїнт (контейнер змінює свою ширину по брейк-поїнт)
+$responsiveType: 1;
+
+//Percent
+@function percent($px, $from: 100) {
+	$result: math.div($px, $from) * 100%;
+	@return $result;
+}
+//REM
+@function toRem($px, $current: 16) {
+	$result: math.div($px, $current) + rem;
+	@return $result;
+}
+//EM
+@function toEm($px, $current: 16) {
+	$result: math.div($px, $current) + em;
+	@return $result;
+}
+
+// Адаптивна властивість (clamp)
+@mixin adaptiveValue($property, $startSize, $minSize: $minSize, $keepSize: 0, $widthFrom: $containerWidth, $widthTo: $minWidth) {
+	@if ($startSize==0) {
+		$startSize: 0.000001;
+	}
+	@if ($minSize==0) {
+		$minSize: 0.000001;
+	}
+
+	@if ($widthFrom == $containerWidth and $maxWidthContainer == 0) {
+		$widthFrom: $maxWidth;
+	}
+
+	// Брейк-поїнти в EM
+	$widthFromMedia: toEm($widthFrom);
+	$widthToMedia: toEm($widthTo);
+
+	// Формула плаваючого значення
+	// Источник: https://css-tricks.com/linearly-scale-font-size-with-css-clamp-based-on-the-viewport/
+	$slope: math.div(($startSize - $minSize), ($widthFrom - $widthTo));
+	$yIntersection: -$widthTo * $slope + $minSize;
+	@if ($yIntersection==0) {
+		$yIntersection: 0.000001;
+	}
+	$flyValue: #{$yIntersection}px " + " #{$slope * 100}vw;
+
+	// Отримання значення властивості
+	$propertyValue: #{"clamp(" #{$minSize}px "," $flyValue "," #{$startSize}px ")"};
+	// Якщо негативні значення
+	@if ($minSize > $startSize) {
+		$propertyValue: #{"clamp(" #{$startSize}px "," $flyValue "," #{$minSize}px ")"};
+	}
+
+	// Встановлюємо значення за замовчуванням
+	@if $keepSize != 1 and $keepSize != 3 {
+		@media (min-width: $widthFromMedia) {
+			#{$property}: #{$startSize}px;
+		}
+	}
+	// Адаптуємо розмір у проміжку між зазначеними ширинами в'юпорту
+	@media (min-width: $widthToMedia) and (max-width: $widthFromMedia) {
+		#{$property}: $propertyValue;
+	}
+	@if $keepSize != 1 and $keepSize != 2 {
+		@media (max-width: $widthToMedia) {
+			#{$property}: #{$minSize}px;
+		}
+	}
+}
+
+@mixin typography($size: "S", $weight: 400, $adapt: 1, $sizeMob: 0) {
+	$fontSize: 14;
+	$fontSizeMob: 14;
+	$fontWeight: $weight;
+	$lineHeight: 1;
+
+	@if ($size == "XT") {
+		$fontSize: 11;
+		$lineHeight: 1.3;
+	}
+	@if ($size == "T") {
+		$fontSize: 12;
+		$lineHeight: 1.3;
+	}
+	@if ($size == "S") {
+		$fontSize: 14;
+		$lineHeight: 1.5;
+		@if ($weight == 600) {
+			$lineHeight: 1.2;
+		}
+	}
+	@if ($size == "M") {
+		$fontSize: 16;
+		$fontSizeMob: 14;
+		$lineHeight: 1.5;
+		@if ($weight == 600) {
+			$lineHeight: 1.2;
+		}
+	}
+	@if ($size == "L") {
+		$fontSize: 18;
+		$fontSizeMob: 16;
+		$lineHeight: 1.5;
+	}
+	@if ($size == "XL") {
+		$fontSize: 20;
+		$fontSizeMob: 18;
+		$lineHeight: 1.5;
+	}
+	@if ($size == "XXL") {
+		$fontSize: 24;
+		$fontSizeMob: 20;
+		$lineHeight: 1.5;
+	}
+	@if ($size == "h1") {
+		$fontSize: 56;
+		$fontSizeMob: 32;
+		$lineHeight: 1.2;
+	}
+	@if ($size == "h2") {
+		$fontSize: 48;
+		$fontSizeMob: 28;
+		$lineHeight: 1.2;
+	}
+	@if ($size == "h3") {
+		$fontSize: 40;
+		$fontSizeMob: 26;
+		$lineHeight: 1.2;
+	}
+	@if ($size == "h4") {
+		$fontSize: 36;
+		$fontSizeMob: 24;
+		$lineHeight: 1.2;
+	}
+	@if ($size == "h5") {
+		$fontSize: 32;
+		$fontSizeMob: 22;
+		$lineHeight: 1.2;
+	}
+	@if ($size == "d1") {
+		$fontSize: 72;
+		$fontSizeMob: 38;
+		$lineHeight: 1.2;
+	}
+
+	@if ($sizeMob > 0) {
+		$fontSizeMob: $sizeMob;
+	}
+
+	@if ($adapt == 1) {
+		@include adaptiveValue("font-size", $fontSize, $fontSizeMob);
+	} @else {
+		font-size: toRem($fontSize);
+	}
+	font-weight: $fontWeight;
+	line-height: $lineHeight;
+}
